@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(120deg, #f6d365, #d88771);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5d4954;
+}
+
+.logo {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+}
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  background: rgb(226, 226, 226);
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 50vh;
+    top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  /* .nav-links li{
+      opacity: 0;
+  } */
+  .burger {
+    display: block;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.mid-box {
+  width: 50%;
+  background-color: #5d4954;
+  font-family: "Poppins", sans-serif;
+  align-self: center;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  color: rgb(226, 226, 226);
+  border-radius: 10px;
+  padding: 5px;
+}
+.btn {
+  width: 100px;
+  height: 35px;
+  align-self: center;
+  text-align: center;
+  margin: 3px;
+  background: lightgreen;
+  border-radius: 5px;
+  border-color: lightblue;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+.login-btns {
+  align-self: center;
+}
+.hide {
+  display: none;
+}
+.signup-container {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #6e4e60;
+}
+.signup-item {
+  justify-content: space-around;
+  align-self: center;
+  display: flex;
+  margin: 3px;
+}
+.sign-inp {
+  width: 70%;
+  flex: 1;
+}
+.sign-lbl {
+  text-align: center;
+  margin-right: 5px;
+  padding: 3px;
+  width: 100px;
+}
