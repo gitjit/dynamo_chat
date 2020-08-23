@@ -15,10 +15,10 @@
 <body>
     <nav>
         <div class="logo">
-            <h4>Dynamo Chat</h4>
+            <h4>Dynamo-Chat</h4>
         </div>
         <ul class="nav-links">
-            <li><a href="/index.html"><i class="fas fa-home">Home</i></a></li> 
+            <li><a href="/index.html"><i class="fas fa-home">Home</i></a></li>
             <li><a onclick="signOut()" href="#" class="user"><i class="fa fa-user" aria-hidden="true"></i></i></a></li>
         </ul>
         <div class="burger">
@@ -28,24 +28,15 @@
         </div>
     </nav>
     <div class="container">
-        <div class="mid-box">
-            <h2>Sign Up</h2>
-            <form class="signup-container">
-                <div class="signup-item">
-                    <label class="sign-lbl" for="username">Username:</label>
-                    <input class="sign-inp" id="username" type="text" />
-                </div>
-                <div class="signup-item">
-                    <label class="sign-lbl" for="username">Email:</label>
-                    <input class="sign-inp" id="email" type="email" />
-                </div>
-                <div class="signup-item">
-                    <label class="sign-lbl" for="password">Password:</label>
-                    <input class="sign-inp" id="password" type="password" />
-                </div>
-                <button class="btn" onclick="signUp()">Sign Up</button>
-            </form>
+        <h2>Users</h2>
+        <!-- <div class="conv">
+            <p class="conv-text">Student - frank</p>
+            <button class="conv-btn">details</button>
         </div>
+        <div class="conv">
+            <p class="conv-text">Student - frank</p>
+            <button class="conv-btn">details</button>
+        </div> -->
     </div>
     <script src="./js/config.js"></script>
     <script src="./js/amazon-cognito-identity.min.js"></script>
@@ -63,7 +54,7 @@
     <script type="text/javascript" src="./js/apiGateway-js-sdk/apigClient.js"></script>
     <script src="./js/app.js"></script>
     <script type="text/javascript">
-
+        loadUsers();
     </script>
 </body>
 

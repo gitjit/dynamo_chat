@@ -15,7 +15,7 @@
 <body>
     <nav>
         <div class="logo">
-            <h4>Dynamo Chat</h4>
+            <h4>Confirm</h4>
         </div>
         <ul class="nav-links">
             <li><a href="/index.html"><i class="fas fa-home">Home</i></a></li> 
@@ -29,21 +29,16 @@
     </nav>
     <div class="container">
         <div class="mid-box">
-            <h2>Sign Up</h2>
+            <h2>Enter your confirm code</h2>
             <form class="signup-container">
                 <div class="signup-item">
-                    <label class="sign-lbl" for="username">Username:</label>
-                    <input class="sign-inp" id="username" type="text" />
+                    <label class="sign-lbl" for="code">Code:</label>
+                    <input class="sign-inp" id="confirm" type="text" />
                 </div>
-                <div class="signup-item">
-                    <label class="sign-lbl" for="username">Email:</label>
-                    <input class="sign-inp" id="email" type="email" />
+                <div class="login-btns">
+                    <button class="btn" onclick="confirmCode()">Confirm</button>
+                    <button class="btn" onclick="resendCode()">Resend</button>
                 </div>
-                <div class="signup-item">
-                    <label class="sign-lbl" for="password">Password:</label>
-                    <input class="sign-inp" id="password" type="password" />
-                </div>
-                <button class="btn" onclick="signUp()">Sign Up</button>
             </form>
         </div>
     </div>
